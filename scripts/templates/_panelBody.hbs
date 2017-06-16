@@ -1,0 +1,24 @@
+<div class="panel-body">
+  <table class="table table-striped">
+    <tbody>
+      {{#unless (checkForError this)}}
+        <tr>
+          <td>{{ snakeToTitle @key}} Api Status</td>
+          <td>{{> loadingGif account=@key}}</td>
+        </tr>
+      {{/unless}}
+      {{#each this as |value key|}}
+        {{#unless (checkForError key)}}
+          <tr>
+            <td>{{value}}</td>
+          </tr>
+        {{else}}
+          <tr>
+            <td>{{@key}}</td>
+            <td>{{this}}</td>
+          </tr>
+        {{/unless}}
+      {{/each}}
+    </tbody>
+  </table>
+</div>

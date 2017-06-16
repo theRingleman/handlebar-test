@@ -1,0 +1,16 @@
+{
+  "name": "handlebars-test-app",
+  "version": "1.0.0",
+  "description": "just a test for templating to transfer",
+  "main": "scripts/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Ringleman",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-handlebars": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
